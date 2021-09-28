@@ -8,12 +8,37 @@
   <style>
     body {
       margin: 0;
+      font-size: 14px;
+    }
+
+    .content {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .content img {
+      width: 180px;
+      margin-bottom: 24px;
+    }
+
+    .content p {
+      color: #b6bbc5;
+      margin: 0;
     }
   </style>
 </head>
 <body>
-  <p>Service is not available in the current region</p>
-  <p>Sorry about that.</p>
-  ::CLOUDFLARE_ERROR_1000S_BOX::
+  <div class="content">
+    <img src="./images/oops.svg" alt="oops" />
+    <p>Service is not available in the current region</p>
+    <p>Sorry about that.</p>
+    <p>
+      ::CLOUDFLARE_ERROR_1000S_BOX::
+    </p>
+  </div>
 </body>
 </html>
